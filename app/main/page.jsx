@@ -37,7 +37,7 @@ const DashboardCard = () => {
         {/* Bottles Section */}
         <Box className="my-6 p-4 bg-white shadow rounded-lg">
           <Typography variant="body2" color="textSecondary" className="mb-2">
-            Bottles you’ve been recycle
+            Bottles you've recycled
           </Typography>
           <Typography variant="h5" className="font-bold text-teal-500">
             25 Bottles
