@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Button } from '@mui/material'; // You can use Material UI components
 import Image from 'next/image';
+import Link from 'next/link'; // Import Link component from Next.js
 
 const GRID_SIZE = 10; // Grid size (10x10)
 const CELL_SIZE = 40; // Width/height of each grid cell
@@ -47,7 +48,6 @@ const MapPage = () => {
 
   return (
     <div className="relative mt-[60px]">
-      
       {/* Map container with background image */}
       <div
         className="relative"
@@ -65,8 +65,8 @@ const MapPage = () => {
           style={{
             width: CELL_SIZE,
             height: CELL_SIZE,
-            left: baseCoordinates.x * CELL_SIZE - CELL_SIZE/2,
-            top: baseCoordinates.y * CELL_SIZE - CELL_SIZE/2,
+            left: baseCoordinates.x * CELL_SIZE - CELL_SIZE / 2,
+            top: baseCoordinates.y * CELL_SIZE - CELL_SIZE / 2,
           }}
         />
         
@@ -78,8 +78,8 @@ const MapPage = () => {
             style={{
               width: CELL_SIZE,
               height: CELL_SIZE,
-              left: trashCan.x * CELL_SIZE - CELL_SIZE/2,
-              top: trashCan.y * CELL_SIZE - CELL_SIZE/2,
+              left: trashCan.x * CELL_SIZE - CELL_SIZE / 2,
+              top: trashCan.y * CELL_SIZE - CELL_SIZE / 2,
             }}
             onClick={() => {
               setSelectedTrashCan(trashCan);
@@ -96,8 +96,8 @@ const MapPage = () => {
             style={{
               width: CELL_SIZE,
               height: CELL_SIZE,
-              left: point.x * CELL_SIZE - CELL_SIZE/2,
-              top: point.y * CELL_SIZE - CELL_SIZE/2,
+              left: point.x * CELL_SIZE - CELL_SIZE / 2,
+              top: point.y * CELL_SIZE - CELL_SIZE / 2,
             }}
           />
         ))}
@@ -123,6 +123,15 @@ const MapPage = () => {
         >
           Clear Path
         </Button>
+      </div>
+
+      {/* Link Button to return to the /map route */}
+      <div className="mt-4 text-center">
+        <Link href="/main">
+          <Button variant="outlined" color="secondary">
+            Return
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -123,20 +123,6 @@ const DashboardCard = () => {
       >
         <div className="flex justify-between py-3 px-5">
           <Button
-            size="small"
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              textAlign: "center",
-              color: "#757575",
-              padding: 0,
-              width: "auto", // Making the button width auto based on content
-              minWidth: "32px", // Setting a smaller min-width
-            }}
-          >
-            🏠 <span className="text-[0.5rem]">Home</span> {/* Smaller Text */}
-          </Button>
-          <Button
             onClick={() => {router.push("/map")}}
             size="small"
             sx={{
@@ -153,6 +139,7 @@ const DashboardCard = () => {
           </Button>
           <Button
             size="small"
+            onClick={() => {router.push("/qr")}}
             sx={{
               display: "flex",
               flexDirection: "column",
@@ -167,6 +154,7 @@ const DashboardCard = () => {
           </Button>
           <Button
             size="small"
+            onClick={() => {router.push("/cart")}}
             sx={{
               display: "flex",
               flexDirection: "column",
@@ -181,6 +169,7 @@ const DashboardCard = () => {
           </Button>
           <Button
             size="small"
+            onClick={() => {router.push("/account")}}
             sx={{
               display: "flex",
               flexDirection: "column",

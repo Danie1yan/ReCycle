@@ -23,7 +23,7 @@ export default function Languages() {
 
     return (
         <div className="flex flex-col items-center p-4 mt-[70px]">
-            <h1 className="text-2xl font-bold mb-4">Choose the language</h1>
+            <h1 className="text-2xl font-bold mb-4 text-black">Choose the language</h1>
             <input
                 type="text"
                 placeholder="Search"
@@ -37,8 +37,7 @@ export default function Languages() {
                         className={`flex items-center justify-between p-3 border-b cursor-pointer`}
                     >
                         <div className="flex items-center space-x-2">
-                            {/* <span>{language.flag}</span> */}
-                            <span>{language.name}</span>
+                            <span className="text-black">{language.name}</span>
                         </div>
                         {selectedLanguage === language.name && (
                             <span className="text-green-500">✔</span>
