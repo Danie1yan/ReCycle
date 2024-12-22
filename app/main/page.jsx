@@ -95,6 +95,7 @@ const DashboardCard = () => {
               📷
             </Button>
             <Button
+            onClick={() => {router.push("https://www.youtube.com/watch?v=ZzP2CeiH1n0")}}
               variant="contained"
               sx={{
                 borderRadius: "50%",

@@ -27,7 +27,7 @@ return (
                     Payment History
                 </Button>
             </Link>
-            <Link href="/location" className="w-full"> {/* Example link */}
+            <Link href="https://www.youtube.com/watch?v=UviUQt-rwKc " className="w-full"> {/* Example link */}
                 <Button variant="contained" color="inherit" fullWidth>
                     Location
                 </Button>
