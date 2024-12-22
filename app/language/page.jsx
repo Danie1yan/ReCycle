@@ -47,7 +47,7 @@ export default function Languages() {
             </ul>
             <button
                 className="mt-4 bg-green-500 text-white px-6 py-2 rounded disabled:bg-gray-300"
-                onClick={() => {router.push("/main")}}
+                onClick={() => {router.push("/signin")}}
             >
                 Continue
             </button>

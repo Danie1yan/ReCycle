@@ -22,7 +22,7 @@ return (
 
         {/* Action Buttons */}
         <div className="w-full max-w-md space-y-4"> {/* Added max-width for larger screens and increased space between buttons */}
-            <Link href="/payment-history" className="w-full"> {/* Example link */}
+            <Link href="/payment" className="w-full"> {/* Example link */}
                 <Button variant="contained" color="success" fullWidth>
                     Payment History
                 </Button>
