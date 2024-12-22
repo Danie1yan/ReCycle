@@ -82,6 +82,7 @@ const DashboardCard = () => {
               🌍
             </Button>
             <Button
+            onClick={() => {router.push("https://youtube.com/shorts/uJX8JXySvys?feature=share")}}
               variant="contained"
               sx={{
                 borderRadius: "50%",
